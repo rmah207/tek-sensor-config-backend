@@ -1,0 +1,50 @@
+port	header	data_size	bit_start	bit_end	parameter_name	group_name	coefficient	round
+100	0x00 0x93	1	0	0	energy_consumption_push_button		1	
+100	0x01 0x93	1	0	0	energy_consumption_reset_button		1	
+100	0x02 0x93	1	0	0	energy_consumption_status_button		1	
+100	0x03 0x93	1	0	0	voltmeter_push_button		1	
+100	0x04 0x93	1	0	0	ammeter_push_button		1	
+100	0x05 0x93	1	0	0	realpower_push_button		1	
+100	0x06 0x93	1	0	0	apparentpower_push_button		1	
+100	0x07 0x93	1	0	0	powerfactor_push_button		1	
+100	0x00 0x01	1	0	7	relay_control		1	
+100	0x08 0x93	1	0	0	realstatus_push_button		1	
+100	0x00	8	0	63	device_eui		1	
+100	0x01	8	0	63	app_eui		1	
+100	0x02	16	0	127	app_key		1	
+100	0x03	4	0	31	device_address		1	
+100	0x04	16	0	127	network_session_key		1	
+100	0x05	16	0	127	app_session_key		1	
+100	0x10	2	7	7	loramac_otaa		1	
+100	0x11	2	0	0	loramac_confirm_mode	loramac_opts	1	
+100	0x11	2	1	1	loramac_networks	loramac_opts	1	
+100	0x11	2	2	2	loramac_duty_cycle	loramac_opts	1	
+100	0x11	2	3	3	loramac_adr	loramac_opts	1	
+100	0x12	2	0	3	loramac_dr_number	loramac_dr_tx_power	1	
+100	0x12	2	8	11	loramac_tx_power	loramac_dr_tx_power	1	
+100	0x13	5	0	31	loramac_rx2_frequency	loramac_rx2	1	
+100	0x13	5	32	39	loramac_rx2_dr	loramac_rx2	1	
+100	0x19	2	0	15	loramac_net_id_msb		1	
+100	0x1A	2	0	15	loramac_net_id_lsb		1	
+100	0x20	4	0	31	tick_period		1	
+100	0x21	2	0	15	energy_period		1	
+100	0x70	2	5	5	app_configuration	write_to_flash	1	
+100	0x70	2	6	6	lora_configuration	write_to_flash	1	
+100	0x70	2	8	8	restart_sensor	write_to_flash	1	
+100	0x71	7	0	7	app_major_version	firmware_version	1	
+100	0x71	7	8	15	app_minor_version	firmware_version	1	
+100	0x71	7	16	23	app_revision	firmware_version	1	
+100	0x71	7	24	31	loramac_major_version	firmware_version	1	
+100	0x71	7	32	39	loramac_minor_version	firmware_version	1	
+100	0x71	7	40	47	loramac_revision	firmware_version	1	
+100	0x71	7	48	55	region	firmware_version	1	
+100	0x72	1	0	7	configuration_factory_reset		1	
+10	0x00 0xFE	8	0	31	elapsed	energy_consumption_meter	1	
+10	0x00 0xFE	8	32	63	consumed	energy_consumption_meter	1	
+10	0x00 0x00	1	0	7	energy_consumption_meter_status		1	
+10	0x00 0x74	2	0	15	voltmeter		0.1	2
+10	0x00 0x75	2	0	15	ammeter		0.1	2
+10	0x00 0x80	2	0	15	real_power		0.1	2
+10	0x01 0x80	2	0	15	apparent_power		0.1	2
+10	0x00 0x81	1	0	7	power_factor_meter		1	
+10	0x00 0x01	1	0	7	relay_status		1	

@@ -1,0 +1,13 @@
+﻿header,port,data_size,bit_start,bit_end,type,parameter_name,group_name,coefficient,addition
+no_header,10,9,48,55,unsigned,HR,periodic_report,1,0
+no_header,10,9,41,47,unsigned,position,periodic_report,1,0
+no_header,10,9,40,40,unsigned,AF,periodic_report,1,0
+no_header,10,9,32,39,unsigned,CSC,periodic_report,1,0
+no_header,10,9,28,31,unsigned,CE,periodic_report,1,0
+no_header,10,9,25,25,unsigned,rest_mode_status,periodic_report,1,0
+no_header,10,9,24,24,unsigned,ua_mode_status,periodic_report,1,0
+no_header,10,9,16,23,unsigned,RR,periodic_report,1,0
+no_header,10,9,8,15,unsigned,BT,periodic_report,0.05,30
+no_header,10,9,0,7,unsigned,battery_status,periodic_report,0.39130434782608695652173913043478,0.60869565217391304347826086956522
+0x71,100,5,0,15,unsigned,loramac_region_num,meta_data,1,
+0x71,100,5,16,39,unsigned,app_version,meta_data,1,
